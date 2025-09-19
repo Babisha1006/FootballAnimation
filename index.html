@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        body{
+            align-items: center;
+            display: flex;
+            justify-content: space-evenly;
+            height: 500px;
+            background-image: url("https://t4.ftcdn.net/jpg/09/04/81/71/360_F_904817165_bTveh2TW5lyaXdLuSUABxLLDzCnl6hvp.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        div{
+            height: 50px;
+            width: 50px;
+            border-radius: 50px;
+            position: relative;
+            top: 300px;
+            animation-name: football;
+            animation-duration: 1.2s;
+            animation-timing-function: ease-out;
+            animation-iteration-count: infinite;
+            animation-direction: reverse;
+           
+        }
+        @keyframes football {
+            0%{
+                top: 0px;
+                left: 0px;
+                animation-timing-function: ease-in;
+            }
+            75%{
+                top: 250px;
+                left: 0px;
+                animation-timing-function: ease-in;
+            }
+            100%{
+                top: 0px;
+                left: 0px;
+                animation-timing-function: ease-in;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6e/Football_%28soccer_ball%29.svg" >
+    </div>
+</body>
+</html>
